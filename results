@@ -1,0 +1,9 @@
+completely random:
+	it took 14,292,672 attempts to guess ['h', 'e', 'l', 'l', 'o']
+
+
+genetic:
+	it took 12 generations or 1,200 words/attempts to guess ['h', 'e', 'l', 'l', 'o']
+	or about 0.0084% of what it took the completely random one 
+	
+
