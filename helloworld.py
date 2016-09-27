@@ -30,7 +30,7 @@ def fitness(organism, target):
 	return score
 
 if __name__ == '__main__':
-	target = list("hello world")
+	target = list("hello world this is the best thing ever")
 	print(target)
 	target_len = len(target)
 	organisms = [generate_organism(target_len) for i in range(100)]
@@ -50,15 +50,14 @@ if __name__ == '__main__':
 				best = organisms[i]
 		
 		for i in range(len(organisms)):
-			organisms[i] = best		
-		
-		for i in range(1, len(organisms)-1):
-			organisms[i] = mutate(organisms[i], target_len)
-			
+			organisms[i] = mutate(best, target_len)		
 		
 		
 		generations += 1
 		print(best)
 		print(best_fit_score)
 		print(generations)
+		
+		
+	print(''.join(best))
 		
