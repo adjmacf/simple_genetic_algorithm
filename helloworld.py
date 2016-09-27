@@ -30,12 +30,11 @@ def fitness(organism, target):
 	return score
 
 if __name__ == '__main__':
-	target = list("hello world this is the best thing ever")
+	target = list("hello world")
 	print(target)
 	target_len = len(target)
 	organisms = [generate_organism(target_len) for i in range(100)]
 	
-	#print(organisms)
 	
 	best_fit_score = 0
 	best = []
